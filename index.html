@@ -443,8 +443,8 @@
                 <div class="mobile-track" id="video-track">
                     
                     <div class="video-card-container scroll-reveal" style="transition-delay: 100ms;">
-                        <div class="video-card relative w-full aspect-[9/16] rounded-[24px] overflow-hidden group cursor-pointer bg-gray-900">
-                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-70 group-hover:opacity-100" style="background-image: url('https://images.unsplash.com/photo-1618077360395-f3068be8e001?q=80&w=800&auto=format&fit=crop');"></div>
+                        <div class="video-card relative w-full aspect-[9/16] rounded-[24px] overflow-hidden group cursor-pointer bg-gray-900" data-video-card>
+                            <video class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="videos/testimonial-1.mov" playsinline muted loop preload="metadata"></video>
                             <div class="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-transparent opacity-90"></div>
                             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent opacity-60"></div>
                             <div class="absolute top-4 left-4 video-card-content flex items-center gap-2">
@@ -453,7 +453,7 @@
                                 </div>
                                 <span class="text-[10px] font-bold tracking-widest text-white/90 uppercase drop-shadow-md">Testimonial</span>
                             </div>
-                            <div class="absolute inset-0 flex items-center justify-center video-card-content pointer-events-none">
+                            <div class="absolute inset-0 flex items-center justify-center video-card-content pointer-events-none video-play-overlay">
                                 <div class="w-16 h-16 rounded-full glass-badge play-pulse flex items-center justify-center transition-transform duration-300 group-hover:scale-110 bg-white/5">
                                     <svg class="w-6 h-6 text-white ml-1 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                 </div>
@@ -469,8 +469,8 @@
                     </div>
 
                     <div class="video-card-container scroll-reveal" style="transition-delay: 200ms;">
-                        <div class="video-card relative w-full aspect-[9/16] rounded-[24px] overflow-hidden group cursor-pointer bg-gray-900">
-                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-70 group-hover:opacity-100" style="background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop');"></div>
+                        <div class="video-card relative w-full aspect-[9/16] rounded-[24px] overflow-hidden group cursor-pointer bg-gray-900" data-video-card>
+                            <video class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="videos/testimonial-2.mov" playsinline muted loop preload="metadata"></video>
                             <div class="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-transparent opacity-90"></div>
                             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent opacity-60"></div>
                             <div class="absolute top-4 left-4 video-card-content flex items-center gap-2">
@@ -479,7 +479,7 @@
                                 </div>
                                 <span class="text-[10px] font-bold tracking-widest text-white/90 uppercase drop-shadow-md">Testimonial</span>
                             </div>
-                            <div class="absolute inset-0 flex items-center justify-center video-card-content pointer-events-none">
+                            <div class="absolute inset-0 flex items-center justify-center video-card-content pointer-events-none video-play-overlay">
                                 <div class="w-16 h-16 rounded-full glass-badge play-pulse flex items-center justify-center transition-transform duration-300 group-hover:scale-110 bg-white/5">
                                     <svg class="w-6 h-6 text-white ml-1 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                 </div>
@@ -495,8 +495,8 @@
                     </div>
 
                     <div class="video-card-container scroll-reveal" style="transition-delay: 300ms;">
-                        <div class="video-card relative w-full aspect-[9/16] rounded-[24px] overflow-hidden group cursor-pointer bg-gray-900">
-                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-70 group-hover:opacity-100" style="background-image: url('https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?q=80&w=800&auto=format&fit=crop');"></div>
+                        <div class="video-card relative w-full aspect-[9/16] rounded-[24px] overflow-hidden group cursor-pointer bg-gray-900" data-video-card>
+                            <video class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="videos/testimonial-3.mov" playsinline muted loop preload="metadata"></video>
                             <div class="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-transparent opacity-90"></div>
                             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent opacity-60"></div>
                             <div class="absolute top-4 left-4 video-card-content flex items-center gap-2">
@@ -505,7 +505,7 @@
                                 </div>
                                 <span class="text-[10px] font-bold tracking-widest text-white/90 uppercase drop-shadow-md">Testimonial</span>
                             </div>
-                            <div class="absolute inset-0 flex items-center justify-center video-card-content pointer-events-none">
+                            <div class="absolute inset-0 flex items-center justify-center video-card-content pointer-events-none video-play-overlay">
                                 <div class="w-16 h-16 rounded-full glass-badge play-pulse flex items-center justify-center transition-transform duration-300 group-hover:scale-110 bg-white/5">
                                     <svg class="w-6 h-6 text-white ml-1 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                 </div>
@@ -1040,6 +1040,31 @@
                     card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
                 });
                 card.addEventListener('mouseleave', () => card.style.transform = `rotateX(0deg) rotateY(0deg)`);
+            });
+
+            // Testimonial video cards: click to play/pause
+            document.querySelectorAll('[data-video-card]').forEach(card => {
+                const video = card.querySelector('video');
+                const overlay = card.querySelector('.video-play-overlay');
+                if (!video || !overlay) return;
+                card.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (video.paused) {
+                        document.querySelectorAll('[data-video-card] video').forEach(v => { if (v !== video) { v.pause(); v.currentTime = 0; } });
+                        document.querySelectorAll('.video-play-overlay').forEach(o => o.style.opacity = '1');
+                        video.play();
+                        overlay.style.opacity = '0';
+                        overlay.style.pointerEvents = 'none';
+                    } else {
+                        video.pause();
+                        overlay.style.opacity = '1';
+                        overlay.style.pointerEvents = '';
+                    }
+                });
+                video.addEventListener('ended', () => {
+                    overlay.style.opacity = '1';
+                    overlay.style.pointerEvents = '';
+                });
             });
 
             // --- SCU Results: Mobile swipe carousel + active card highlight ---
