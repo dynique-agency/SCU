@@ -198,16 +198,18 @@
         }
         .play-pulse { animation: pulse-glow 2.5s infinite; }
 
-        /* Scroll Hijack CSS Classes */
+        /* SCU Results / Video Cards - Mobile & Desktop */
         @media (max-width: 767px) {
-            .mobile-sticky-hijack { height: 250vh; width: 100%; position: relative; }
-            .mobile-sticky-inner { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; width: 100%; }
-            .mobile-track { display: flex; gap: 1rem; width: max-content; padding: 0 1.25rem; will-change: transform; }
-            .video-card-container { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease; opacity: 0.4; transform: scale(0.85); width: 80vw; }
+            .mobile-sticky-hijack { width: 100%; position: relative; }
+            .mobile-sticky-inner { display: flex; flex-direction: column; overflow: visible; width: 100%; }
+            .mobile-track { display: flex; gap: 1rem; width: max-content; padding: 0 5vw; flex-shrink: 0; overflow-x: auto; overflow-y: visible; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; }
+            .mobile-track::-webkit-scrollbar { display: none; }
+            .mobile-track .video-card-container { scroll-snap-align: center; flex-shrink: 0; }
+            .video-card-container { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease; opacity: 0.6; transform: scale(0.9); width: 85vw; max-width: 320px; min-width: 280px; }
             .video-card-container.carousel-active { opacity: 1; transform: scale(1); }
         }
         @media (min-width: 768px) {
-            .mobile-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; max-width: 56rem; margin: 0 auto; width: 100%; }
+            .mobile-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; max-width: 56rem; margin: 0 auto; width: 100%; padding: 0 1rem; }
         }
 
         /* Toggle & Pricing Settings */
@@ -415,8 +417,8 @@
             </div>
         </div>
 
-        <!-- Success Stories Section with Mobile Scroll Hijack -->
-        <div id="mobile-video-hijack" class="mt-32 md:mt-40">
+        <!-- Success Stories / SCU Results Section -->
+        <div id="mobile-video-hijack" class="mobile-sticky-hijack mt-32 md:mt-40 relative w-full">
             <div class="mobile-sticky-inner md:relative md:top-auto md:h-auto md:flex-none">
                 
                 <div class="absolute inset-0 flex justify-center items-center pointer-events-none z-[-1] md:hidden">
@@ -876,10 +878,13 @@
                 <span class="text-gray-500 text-sm font-light">© 2026</span>
             </div>
             <div class="flex gap-6 text-sm text-gray-400 font-light">
-                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
-                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
                 <a href="#" class="hover:text-white transition-colors">Contact</a>
             </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-5 pt-8 mt-8 border-t border-white/5 text-center">
+            <a href="https://dynique.nl" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-400 text-sm font-light transition-colors">🚀 Landingpage realised by Dynique</a>
         </div>
     </footer>
 
@@ -1037,32 +1042,28 @@
                 card.addEventListener('mouseleave', () => card.style.transform = `rotateX(0deg) rotateY(0deg)`);
             });
 
-            // --- Mandatory Mobile Video Scroll Hijack ---
-            const videoHijack = document.getElementById('mobile-video-hijack');
+            // --- SCU Results: Mobile swipe carousel + active card highlight ---
             const videoTrack = document.getElementById('video-track');
-            
-            if (window.innerWidth < 768 && videoHijack && videoTrack) {
-                window.addEventListener('scroll', () => {
-                    const rect = videoHijack.getBoundingClientRect();
-                    // Bereken hoever we in de hijack-sectie zijn gescrold
-                    const scrollableDistance = rect.height - window.innerHeight;
-                    let progress = -rect.top / scrollableDistance;
-                    progress = Math.max(0, Math.min(1, progress)); // Beperk tussen 0 en 1
-                    
-                    // Verplaats de track naar links op basis van verticale scroll
-                    const maxTranslate = videoTrack.scrollWidth - window.innerWidth + 40; 
-                    videoTrack.style.transform = `translate3d(-${progress * maxTranslate}px, 0, 0)`;
-                    
-                    // Highlight de actieve video kaart
-                    const vCards = videoTrack.querySelectorAll('.video-card-container');
-                    const totalCards = vCards.length;
-                    const activeIndex = Math.min(totalCards - 1, Math.floor(progress * totalCards));
-                    
+            if (videoTrack) {
+                const vCards = videoTrack.querySelectorAll('.video-card-container');
+                function updateActiveCard() {
+                    if (window.innerWidth >= 768) {
+                        vCards.forEach(c => c.classList.add('carousel-active'));
+                        return;
+                    }
+                    const trackRect = videoTrack.getBoundingClientRect();
+                    const trackCenter = trackRect.left + trackRect.width / 2;
+                    let bestIdx = 0, bestDist = Infinity;
                     vCards.forEach((c, i) => {
-                        if (i === activeIndex) c.classList.add('carousel-active');
-                        else c.classList.remove('carousel-active');
+                        const r = c.getBoundingClientRect();
+                        const dist = Math.abs((r.left + r.width / 2) - trackCenter);
+                        if (dist < bestDist) { bestDist = dist; bestIdx = i; }
                     });
-                });
+                    vCards.forEach((c, i) => c.classList.toggle('carousel-active', i === bestIdx));
+                }
+                updateActiveCard();
+                videoTrack.addEventListener('scroll', updateActiveCard);
+                window.addEventListener('resize', updateActiveCard);
             }
 
             // FAQ Accordion
