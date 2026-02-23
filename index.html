@@ -136,7 +136,7 @@
         .marquee-track:hover { animation-play-state: paused !important; }
         
         /* Fast Marquee for Stats */
-        .marquee-track-fast { animation: marqueeScroll 15s linear infinite; }
+        .marquee-track-fast { animation: marqueeScroll 20s linear infinite; }
         /* Medium Marquee for Reviews */
         .marquee-track-reviews { animation: marqueeScroll 40s linear infinite; }
         .marquee-track-reviews-reverse { animation: marqueeScrollReverse 40s linear infinite; }
@@ -303,7 +303,7 @@
     <div id="sticky-cta" class="sticky-cta-bar flex items-center gap-4 bg-[#0a0a0a]/90 backdrop-blur-xl border border-white/10 p-2 pr-2 pl-6 rounded-full shadow-[0_20px_40px_-10px_rgba(0,0,0,0.8)]">
         <span class="text-white text-sm font-medium hidden sm:block">Ready to take control?</span>
         <div class="magnetic-wrap">
-            <a href="#pricing" class="cyan-btn px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase">Secure Arsenal</a>
+            <a href="#pricing" class="cyan-btn px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase">Choose Your Package</a>
         </div>
     </div>
 
@@ -368,8 +368,8 @@
                         <p class="text-gray-300/80 text-sm md:text-base font-medium leading-relaxed">Social events saved from <br/><span class="text-white/80 italic">“I’ll just wear a cap”</span></p>
                     </div>
                     <div class="stat-card rounded-2xl p-6 md:p-8 flex flex-col items-center text-center">
-                        <span class="text-4xl md:text-5xl font-extrabold text-gradient-accent glow-text mb-3 tracking-tight">$<span class="counter" data-target="50000">0</span></span>
-                        <p class="text-gray-300/80 text-sm md:text-base font-medium leading-relaxed">Saved in lifelong <br/><span class="text-white/80">barber costs</span></p>
+                        <span class="text-4xl md:text-5xl font-extrabold text-gradient-accent glow-text mb-3 tracking-tight">$<span class="counter" data-target="75000">0</span></span>
+                        <p class="text-gray-300/80 text-sm md:text-base font-medium leading-relaxed">Saved in <br/><span class="text-white/80">barber costs</span></p>
                     </div>
                     <div class="stat-card rounded-2xl p-6 md:p-8 flex flex-col items-center text-center">
                         <span class="text-4xl md:text-5xl font-extrabold text-gradient-accent glow-text mb-3 tracking-tight"><span class="counter" data-target="1680">0</span>+</span>
@@ -394,8 +394,8 @@
                         <p class="text-gray-300/80 text-sm md:text-base font-medium leading-relaxed">Social events saved from <br/><span class="text-white/80 italic">“I’ll just wear a cap”</span></p>
                     </div>
                     <div class="stat-card rounded-2xl p-6 md:p-8 flex flex-col items-center text-center" aria-hidden="true">
-                        <span class="text-4xl md:text-5xl font-extrabold text-gradient-accent glow-text mb-3 tracking-tight">$<span class="counter" data-target="50000">0</span></span>
-                        <p class="text-gray-300/80 text-sm md:text-base font-medium leading-relaxed">Saved in lifelong <br/><span class="text-white/80">barber costs</span></p>
+                        <span class="text-4xl md:text-5xl font-extrabold text-gradient-accent glow-text mb-3 tracking-tight">$<span class="counter" data-target="75000">0</span></span>
+                        <p class="text-gray-300/80 text-sm md:text-base font-medium leading-relaxed">Saved in <br/><span class="text-white/80">barber costs</span></p>
                     </div>
                     <div class="stat-card rounded-2xl p-6 md:p-8 flex flex-col items-center text-center" aria-hidden="true">
                         <span class="text-4xl md:text-5xl font-extrabold text-gradient-accent glow-text mb-3 tracking-tight"><span class="counter" data-target="1680">0</span>+</span>
@@ -435,7 +435,7 @@
                         SCU <span class="text-gradient-accent italic">Results</span>
                     </h2>
                     <p class="text-gray-300/80 text-base md:text-lg max-w-xl mx-auto scroll-reveal font-light px-5" style="transition-delay: 200ms;">
-                        Real-World Results from Appearance Control Framework Users
+                        real world results from selfcutuniversity students
                     </p>
                 </div>
 
@@ -519,7 +519,7 @@
                     </div>
                 </div>
                 <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white mb-4 scroll-reveal" style="transition-delay: 100ms;">
-                    Choose Your <span class="text-gradient-accent italic">Arsenal</span>
+                    Choose your <span class="text-gradient-accent italic">Package</span>
                 </h2>
                 <p class="text-gray-300/80 text-base md:text-lg max-w-xl mx-auto scroll-reveal font-light px-5" style="transition-delay: 200ms;">
                     Select the perfect plan to take full control of your appearance and eliminate barber costs forever.
@@ -533,80 +533,79 @@
                     <div id="toggle-bg" class="absolute left-1.5 top-1.5 bottom-1.5 rounded-full transition-all duration-300 ease-out"></div>
                     
                     <button id="btn-blueprint" class="px-6 py-3 rounded-full text-sm font-medium text-white transition-colors duration-300 relative z-10 w-36 sm:w-40">
-                        SCU Blueprint
+                        Knowledge
                     </button>
-                    <!-- Arsenal Default Active -->
+                    <!-- Confidence Pack Default Active -->
                     <button id="btn-arsenal" class="px-6 py-3 rounded-full text-sm font-bold text-[#030303] transition-colors duration-300 relative z-10 w-36 sm:w-40 flex items-center justify-center gap-1.5">
-                        SCU Arsenal <span class="text-[9px] uppercase tracking-widest bg-black/20 text-black px-1.5 py-0.5 rounded-full border border-black/10 hidden sm:inline-block">Pro</span>
+                        Confidence <span class="text-[9px] uppercase tracking-widest bg-black/20 text-black px-1.5 py-0.5 rounded-full border border-black/10 hidden sm:inline-block">⭐</span>
                     </button>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto relative z-10 w-full px-0">
                 
-                <!-- Card 1: Blueprint -->
+                <!-- Card 1: Knowledge Pack -->
                 <div id="card-blueprint" class="pricing-card-wrapper inactive-card">
                     <div class="pricing-card rounded-[2rem] p-8 md:p-10 flex flex-col">
                         <div class="mb-8">
-                            <h3 class="text-2xl font-bold text-white mb-2">SCU Blueprint</h3>
-                            <p class="text-sm text-gray-400 font-light leading-relaxed pr-4">Designed for the man ready to master his own appearance with expert digital guidance.</p>
+                            <h3 class="text-2xl font-bold text-white mb-2">🟩 SCU Knowledge Pack — $97</h3>
+                            <p class="text-sm text-gray-400 font-light leading-relaxed pr-4">Your Foundation For Independent Haircut Maintenance</p>
                         </div>
-                        <div class="mb-8 inline-flex items-center gap-2 text-sm font-medium text-cyan-400">
-                            <span>⚡ Instant Digital Access</span>
-                        </div>
-                        <ul class="pricing-feature-list flex-grow flex flex-col gap-1 mb-10">
-                            <li>The Complete SCU Video Framework</li>
-                            <li>Step-by-Step Fade Mastery Guide</li>
-                            <li>Tool & Equipment Selection Blueprint</li>
-                            <li>Private Skool Community Access</li>
-                            <li>Weekly Group Q&A Calls</li>
-                            <li class="dimmed">Premium SCU Clipper Set</li>
-                            <li class="dimmed">3-Way Mirror System</li>
+                        <ul class="pricing-feature-list flex-grow flex flex-col gap-1 mb-6">
+                            <li>✔ The Complete SCU Self-Cut Framework</li>
+                            <li>✔ Step-by-Step Fade Maintenance System</li>
+                            <li>✔ Hairline & Lineup Precision Module</li>
+                            <li>✔ Face-Shape Based Style Selection</li>
+                            <li>✔ Common Mistake Prevention Guide</li>
+                            <li>✔ Tool & Mirror Setup Blueprint</li>
+                            <li>✔ Weekly Live Community Q&A</li>
+                            <li>✔ Private SCU Member Community</li>
+                            <li>✔ Lifetime Access To All Modules</li>
                         </ul>
+                        <p class="text-xs text-gray-400 font-light leading-relaxed mb-6"><strong class="text-gray-300">Best For:</strong> Men who want to maintain a clean, consistent appearance without relying on barber appointments.</p>
                         <div class="mt-auto border-t border-white/10 pt-8 flex flex-col items-center">
                             <div class="flex items-baseline gap-1 mb-6">
-                                <span class="text-4xl md:text-5xl font-bold text-white">$147</span>
+                                <span class="text-4xl md:text-5xl font-bold text-white">$97</span>
                                 <span class="text-gray-500 font-medium">/ one-time</span>
                             </div>
                             <div class="w-full">
-                                <a href="#" class="premium-btn w-full text-center py-4 rounded-full text-white font-bold tracking-widest uppercase text-sm block">Get Digital Access</a>
+                                <a href="#" class="premium-btn w-full text-center py-4 rounded-full text-white font-bold tracking-widest uppercase text-sm block">Get Knowledge Pack</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 2: Arsenal (Ultra Premium) -->
+                <!-- Card 2: Confidence Pack -->
                 <div id="card-arsenal" class="pricing-card-wrapper active-card relative pt-8">
                     <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyan-400 to-blue-500 text-[#030303] text-sm font-bold uppercase tracking-widest px-6 py-2 rounded-full shadow-[0_0_24px_rgba(56,189,248,0.6)] border border-cyan-300/30 z-20">
-                        Complete Setup
+                        ⭐ Most Popular
                     </div>
                     <div class="pricing-card highlighted rounded-[2rem] p-8 md:p-10 flex flex-col relative overflow-hidden">
-                        <!-- Insane animated pulse border for Arsenal -->
                         <div class="absolute inset-0 rounded-[2rem] border-[1.5px] border-cyan-400/50 animate-[pulse_2.5s_ease-in-out_infinite] pointer-events-none"></div>
                         <div class="absolute inset-0 bg-cyan-400/5 rounded-[2rem] pointer-events-none"></div>
                         <div class="mb-8 relative z-10">
-                            <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-200 mb-2 drop-shadow-md">SCU Arsenal</h3>
-                            <p class="text-sm text-gray-300 font-light leading-relaxed pr-4">The ultimate package. Everything you need: The knowledge AND the premium physical tools.</p>
+                            <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-200 mb-2 drop-shadow-md">🟦 SCU Confidence Pack — $197 ⭐</h3>
+                            <p class="text-sm text-gray-300 font-light leading-relaxed pr-4">Guided First Cut + Personalized Support</p>
                         </div>
-                        <div class="mb-8 inline-flex items-center gap-2 text-sm font-medium text-cyan-400 relative z-10">
-                            <span>🎁 Includes Premium Hardware</span>
-                        </div>
-                        <ul class="pricing-feature-list flex-grow flex flex-col gap-1 mb-10 relative z-10">
-                            <li><strong class="text-white">Everything in SCU Blueprint</strong></li>
-                            <li><strong class="text-cyan-200">Premium SCU Clipper Set</strong></li>
-                            <li><strong class="text-cyan-200">Zero-Gap Detailing Trimmer</strong></li>
-                            <li><strong class="text-cyan-200">SCU 3-Way Mirror System</strong></li>
-                            <li>1-on-1 Form Review (1st Month)</li>
-                            <li>Priority Community Support</li>
-                            <li>Free Worldwide Shipping</li>
+                        <ul class="pricing-feature-list flex-grow flex flex-col gap-1 mb-6 relative z-10">
+                            <li>✔ Everything In Knowledge Pack</li>
+                            <li>✔ 1-on-1 Live First Self-Cut Guidance</li>
+                            <li>✔ Personalized Cut Plan (Face Shape Based)</li>
+                            <li>✔ Live Blending & Guard Selection Support</li>
+                            <li>✔ Hairline Cleanup Assistance</li>
+                            <li>✔ Solo Attempt Review Session</li>
+                            <li>✔ Symmetry & Blend Refinement</li>
+                            <li>✔ Emergency Fix Support (48–72h)</li>
+                            <li>✔ Recording Of Your Private Sessions</li>
                         </ul>
+                        <p class="text-xs text-gray-400 font-light leading-relaxed mb-6 relative z-10"><strong class="text-gray-300">Designed To Ensure:</strong> You complete your first cut cleanly and can confidently maintain your haircut on your own afterwards.</p>
                         <div class="mt-auto border-t border-white/10 pt-8 flex flex-col items-center relative z-10">
                             <div class="flex items-baseline gap-1 mb-6">
-                                <span class="text-4xl md:text-5xl font-bold text-white glow-text">$297</span>
+                                <span class="text-4xl md:text-5xl font-bold text-white glow-text">$197</span>
                                 <span class="text-gray-500 font-medium">/ one-time</span>
                             </div>
                             <div class="w-full">
-                                <a href="#" class="cyan-btn w-full text-center py-4 rounded-full font-bold tracking-widest uppercase text-sm block">Claim Your Arsenal</a>
+                                <a href="#" class="cyan-btn w-full text-center py-4 rounded-full font-bold tracking-widest uppercase text-sm block">Claim Confidence Pack</a>
                             </div>
                         </div>
                     </div>
@@ -640,11 +639,29 @@
                     </div>
                     <div class="faq-item">
                         <button class="faq-button">
-                            <span class="faq-question-text">What if I completely mess up my hair on the first try?</span>
+                            <span class="faq-question-text">Do I need expensive tools to get started?</span>
                             <div class="faq-icon"></div>
                         </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-inner">The SCU methodology is built on a "top-down" approach. We start with the longest guards and slowly work our way down. By following the blueprint, it is mathematically impossible to accidentally shave a bald spot or ruin a fade. You stay in complete control the entire time.</div>
+                            <div class="faq-answer-inner">No — you don't need a professional barber setup. To begin maintaining your own haircut, you only need: A clipper, a trimmer, a mirror setup, and (optional) scissors depending on your hairstyle. Inside SCU, we guide you on exactly what to purchase based on your budget — whether you want to start with a $50, $100 or $200 setup. So you can avoid overspending on tools you don't actually need.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-button">
+                            <span class="faq-question-text">Can I use SCU with any hairstyle?</span>
+                            <div class="faq-icon"></div>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">SCU is designed to help you maintain most short-to-medium length hairstyles, including: Low, mid or high fades; tapers; buzz cuts; textured tops. We also help you choose a style that works best with your face shape.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-button">
+                            <span class="faq-question-text">What if I mess up my hair?</span>
+                            <div class="faq-icon"></div>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">SCU teaches you how to avoid common beginner mistakes and correct uneven areas safely. Confidence Pack members also receive live 1-on-1 guidance and emergency fix support if they need help during or after a cut.</div>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -654,15 +671,6 @@
                         </button>
                         <div class="faq-answer">
                             <div class="faq-answer-inner">Most of our students report achieving a "barber-quality" fade by their 3rd or 4th session. Your first cut might take 45 minutes as you learn the mirror angles. By month two, you'll be knocking out a flawless maintenance cut in under 15 minutes before jumping in the shower.</div>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-button">
-                            <span class="faq-question-text">Do I really need the 'Arsenal' physical tools?</span>
-                            <div class="faq-icon"></div>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">You can absolutely start with the Blueprint and use your own tools. However, the Arsenal package includes the exact zero-gap detailing trimmers and fade clippers we use in the tutorials.</div>
                         </div>
                     </div>
                 </div>
@@ -693,7 +701,7 @@
                 <div class="marquee-wrapper pb-2">
                     <div class="marquee-track marquee-track-reviews">
                         
-                        <!-- Review Card Template -->
+                        <!-- Review Card 1 -->
                         <div class="stat-card review-card rounded-2xl p-6 md:p-8 break-inside-avoid relative group text-left">
                             <div class="absolute top-4 right-6 opacity-10 text-cyan-400 group-hover:opacity-20 transition-opacity duration-300">
                                 <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
@@ -705,13 +713,13 @@
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
-                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"I was highly skeptical about cutting my own hair. The Blueprint made it stupidly simple. First cut took me 40 minutes, now I do it in 15. I've easily saved $150 in the first two months alone."</p>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"I joined SCU when they had around 10K followers. After doing the calculations this morning, I've saved over $2,000 in barber costs and made more than $6,000 cutting my own hair and helping people around my neighborhood and college. I used to be hesitant to invest in things online, but SCU made it affordable to get started and the support inside the program has been incredible."</p>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
-                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Marcus T." class="w-full h-full object-cover">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Marcus D." class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-semibold text-sm">Marcus T.</h4>
+                                    <h4 class="text-white font-semibold text-sm">Marcus D.</h4>
                                     <div class="flex items-center gap-1">
                                         <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                                         <span class="text-xs text-gray-400">Verified Student</span>
@@ -725,16 +733,16 @@
                             <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
-                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"The zero-gap trimmer in the Arsenal kit is genuinely better than what my barber was using. Worth every penny just for the hardware, but the top-down video framework is the real goldmine."</p>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"SCU gave me the best foundation to start maintaining my own haircut. What started as something I just wanted to try has now become something I genuinely enjoy. Overall, a great system."</p>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
-                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="David R." class="w-full h-full object-cover">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Jacob Renel" class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-semibold text-sm">David R.</h4>
+                                    <h4 class="text-white font-semibold text-sm">Jacob Renel</h4>
                                     <div class="flex items-center gap-1">
                                         <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                                        <span class="text-xs text-gray-400">Arsenal Member</span>
+                                        <span class="text-xs text-gray-400">Verified Student</span>
                                     </div>
                                 </div>
                             </div>
@@ -745,13 +753,73 @@
                             <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
-                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"It took me about 3 tries to really nail the back of my head, but the Skool community helped me correct my angles immediately. Best investment I made this year."</p>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"Honestly shocked by how quickly I was able to understand everything. SCU even provided additional support through a live session which made it easier to apply the framework step-by-step. The system itself is very detailed."</p>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
-                                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&auto=format&fit=crop" alt="Michael S." class="w-full h-full object-cover">
+                                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&auto=format&fit=crop" alt="Swift A." class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-semibold text-sm">Michael S.</h4>
+                                    <h4 class="text-white font-semibold text-sm">Swift A.</h4>
+                                    <div class="flex items-center gap-1">
+                                        <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        <span class="text-xs text-gray-400">Verified Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card review-card rounded-2xl p-6 md:p-8 break-inside-avoid relative group text-left">
+                            <div class="absolute top-4 right-6 opacity-10 text-cyan-400 group-hover:opacity-20 transition-opacity duration-300"><svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                            <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"After using SCU as a foundation and cutting my hair for the second time this month, I was genuinely surprised by how good the result turned out as a beginner. The guidance inside the system made the process much easier than expected."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Daniel K." class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Daniel K.</h4>
+                                    <div class="flex items-center gap-1">
+                                        <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        <span class="text-xs text-gray-400">Verified Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card review-card rounded-2xl p-6 md:p-8 break-inside-avoid relative group text-left">
+                            <div class="absolute top-4 right-6 opacity-10 text-cyan-400 group-hover:opacity-20 transition-opacity duration-300"><svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                            <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"The SCU community helped me progress with clipper skills much faster than I expected. Being able to receive constructive feedback from experienced members made it easier to improve from previous cuts."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Kenith L." class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Kenith L.</h4>
+                                    <div class="flex items-center gap-1">
+                                        <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        <span class="text-xs text-gray-400">Verified Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card review-card rounded-2xl p-6 md:p-8 break-inside-avoid relative group text-left">
+                            <div class="absolute top-4 right-6 opacity-10 text-cyan-400 group-hover:opacity-20 transition-opacity duration-300"><svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                            <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"SCU helped me and my brothers save around $70–$80 per haircut as a family. I started by maintaining my own haircut and now also help them out when needed. Definitely worth it."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
+                                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&auto=format&fit=crop" alt="Tyrese M." class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Tyrese M.</h4>
                                     <div class="flex items-center gap-1">
                                         <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                                         <span class="text-xs text-gray-400">Verified Student</span>
@@ -772,13 +840,13 @@
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
-                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"I was highly skeptical about cutting my own hair. The Blueprint made it stupidly simple. First cut took me 40 minutes, now I do it in 15. I've easily saved $150 in the first two months alone."</p>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"I joined SCU when they had around 10K followers. After doing the calculations this morning, I've saved over $2,000 in barber costs and made more than $6,000 cutting my own hair and helping people around my neighborhood and college. I used to be hesitant to invest in things online, but SCU made it affordable to get started and the support inside the program has been incredible."</p>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
-                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Marcus T." class="w-full h-full object-cover">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Marcus D." class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-semibold text-sm">Marcus T.</h4>
+                                    <h4 class="text-white font-semibold text-sm">Marcus D.</h4>
                                     <div class="flex items-center gap-1">
                                         <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                                         <span class="text-xs text-gray-400">Verified Student</span>
@@ -792,16 +860,16 @@
                             <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
-                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"The zero-gap trimmer in the Arsenal kit is genuinely better than what my barber was using. Worth every penny just for the hardware, but the top-down video framework is the real goldmine."</p>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"SCU gave me the best foundation to start maintaining my own haircut. What started as something I just wanted to try has now become something I genuinely enjoy. Overall, a great system."</p>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
-                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="David R." class="w-full h-full object-cover">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Jacob Renel" class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-semibold text-sm">David R.</h4>
+                                    <h4 class="text-white font-semibold text-sm">Jacob Renel</h4>
                                     <div class="flex items-center gap-1">
                                         <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                                        <span class="text-xs text-gray-400">Arsenal Member</span>
+                                        <span class="text-xs text-gray-400">Verified Student</span>
                                     </div>
                                 </div>
                             </div>
@@ -810,19 +878,75 @@
                         <div class="stat-card review-card rounded-2xl p-6 md:p-8 break-inside-avoid relative group text-left" aria-hidden="true">
                             <div class="absolute top-4 right-6 opacity-10 text-cyan-400 group-hover:opacity-20 transition-opacity duration-300"><svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
                             <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                             </div>
-                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"It took me about 3 tries to really nail the back of my head, but the Skool community helped me correct my angles immediately. Best investment I made this year."</p>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"Honestly shocked by how quickly I was able to understand everything. SCU even provided additional support through a live session which made it easier to apply the framework step-by-step. The system itself is very detailed."</p>
                             <div class="flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
-                                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&auto=format&fit=crop" alt="Michael S." class="w-full h-full object-cover">
+                                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&auto=format&fit=crop" alt="Swift A." class="w-full h-full object-cover">
                                 </div>
                                 <div>
-                                    <h4 class="text-white font-semibold text-sm">Michael S.</h4>
+                                    <h4 class="text-white font-semibold text-sm">Swift A.</h4>
+                                    <div class="flex items-center gap-1">
+                                        <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        <span class="text-xs text-gray-400">Verified Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card review-card rounded-2xl p-6 md:p-8 break-inside-avoid relative group text-left" aria-hidden="true">
+                            <div class="absolute top-4 right-6 opacity-10 text-cyan-400 group-hover:opacity-20 transition-opacity duration-300"><svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                            <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"After using SCU as a foundation and cutting my hair for the second time this month, I was genuinely surprised by how good the result turned out as a beginner. The guidance inside the system made the process much easier than expected."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Daniel K." class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Daniel K.</h4>
+                                    <div class="flex items-center gap-1">
+                                        <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        <span class="text-xs text-gray-400">Verified Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card review-card rounded-2xl p-6 md:p-8 break-inside-avoid relative group text-left" aria-hidden="true">
+                            <div class="absolute top-4 right-6 opacity-10 text-cyan-400 group-hover:opacity-20 transition-opacity duration-300"><svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                            <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"The SCU community helped me progress with clipper skills much faster than I expected. Being able to receive constructive feedback from experienced members made it easier to improve from previous cuts."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Kenith L." class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Kenith L.</h4>
+                                    <div class="flex items-center gap-1">
+                                        <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        <span class="text-xs text-gray-400">Verified Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card review-card rounded-2xl p-6 md:p-8 break-inside-avoid relative group text-left" aria-hidden="true">
+                            <div class="absolute top-4 right-6 opacity-10 text-cyan-400 group-hover:opacity-20 transition-opacity duration-300"><svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                            <div class="flex items-center gap-1 mb-4 text-cyan-400 drop-shadow-[0_0_5px_rgba(56,189,248,0.5)]">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            </div>
+                            <p class="text-gray-300 text-[0.95rem] leading-relaxed mb-6 font-light">"SCU helped me and my brothers save around $70–$80 per haircut as a family. I started by maintaining my own haircut and now also help them out when needed. Definitely worth it."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gray-800 overflow-hidden border border-white/10">
+                                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=200&auto=format&fit=crop" alt="Tyrese M." class="w-full h-full object-cover">
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Tyrese M.</h4>
                                     <div class="flex items-center gap-1">
                                         <svg class="w-3 h-3 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                                         <span class="text-xs text-gray-400">Verified Student</span>
@@ -841,7 +965,7 @@
                 <div class="magnetic-wrap px-5">
                     <a href="#pricing" class="btn-shine premium-btn group inline-flex items-center justify-center gap-4 px-10 md:px-14 py-6 md:py-8 rounded-full backdrop-blur-md cursor-pointer relative shadow-[0_0_30px_rgba(56,189,248,0.3)] hover:shadow-[0_0_60px_rgba(56,189,248,0.6)] transition-all duration-500 scale-100 md:scale-105 hover:scale-110">
                         <span class="absolute inset-0 rounded-full border-2 border-cyan-400/50 animate-[ping_3s_ease-out_infinite]"></span>
-                        <span class="text-base md:text-xl font-extrabold tracking-[0.2em] text-white uppercase mt-0.5">Secure Your Arsenal</span>
+                        <span class="text-base md:text-xl font-extrabold tracking-[0.2em] text-white uppercase mt-0.5">Choose Your Package</span>
                         <svg class="w-6 h-6 text-cyan-400 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                     </a>
                 </div>
