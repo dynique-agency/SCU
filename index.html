@@ -117,6 +117,16 @@
         .cyan-btn:hover::before { left: 150%; }
         .cyan-btn:hover { box-shadow: 0 15px 40px -10px rgba(56, 189, 248, 0.7); }
 
+        /* Hero intro video player */
+        .hero-video-wrap {
+            max-width: 640px; margin: 0 auto 2rem;
+            border-radius: 1.25rem; overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.08);
+            background: #0a0a0a;
+            box-shadow: 0 20px 50px -15px rgba(0,0,0,0.6), 0 0 0 1px rgba(56, 189, 248, 0.06);
+        }
+        .hero-video-wrap video { width: 100%; height: auto; display: block; vertical-align: middle; }
+
         /* Ultra Shine Effect for Final CTA */
         .btn-shine::after {
             content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
@@ -313,6 +323,9 @@
             <h1 class="animate-fade-up delay-200 text-3xl md:text-5xl lg:text-6xl font-bold leading-[1.2] md:leading-[1.15] tracking-tight mb-8 md:mb-12 max-w-3xl mx-auto">
                 Maintain A <span class="text-gradient-accent italic">Clean, Consistent Haircut</span> — Without Booking Appointments, Waiting In Line Or Paying Someone <span class="text-gradient-accent italic">Every 2 Weeks</span>
             </h1>
+            <div class="animate-fade-up delay-250 hero-video-wrap px-0">
+                <video src="videos/hero-intro.mp4" controls playsinline preload="metadata" class="w-full" aria-label="Intro video"></video>
+            </div>
             <div id="hero-trigger" class="animate-fade-up delay-300 w-full max-w-2xl mx-auto flex flex-col items-center space-y-8">
                 <div class="text-[1.05rem] md:text-xl leading-relaxed text-gray-200/90 font-light w-full">
                     <p class="mb-6 font-medium text-white text-lg md:text-2xl text-center">Your haircut shouldn’t depend on:</p>
